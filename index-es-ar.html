@@ -98,8 +98,8 @@ body {
     width: 200%;
     height: 200%;
     pointer-events: none;
-    background: -webkit-gradient(radial, center center, 0, center center, 350, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
-    background: -moz-radial-gradient(center 45deg, circle closest-side, transparent 0, black 350px);
+    background: -webkit-gradient(radial, center center, 0, center center, 350, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.9)));
+    background: -moz-radial-gradient(center 45deg, circle closest-side, transparent 0, rgba(0,0,0,0.99) 350px);
     z-index: 100;
 }
 
@@ -129,7 +129,7 @@ body {
 </div>
 <div id="sources">
 El codigo fuente de esta página se puede encontrar en <a
-href="http://github.com/amaciel/stop-sopa" />GitHub</a>.
+href="http://github.com/youwotma/stop-sopa" />GitHub</a>.
 </div>
 <script type="text/javascript" language="javascript" charset="utf-8">
 /**
@@ -167,8 +167,8 @@ function init() {
 }
 
 function onMouseMove(e) {
-    var xm = (e.clientX - Math.floor(window.innerWidth / 2)) * 0.4;
-    var ym = (e.clientY - Math.floor(window.innerHeight / 3)) * 0.4;
+    var xm = (e.clientX - Math.floor(window.innerWidth / 2)) * 0.2;
+    var ym = (e.clientY - Math.floor(window.innerHeight / 3)) * 0.2;
     var d = Math.round(Math.sqrt(xm*xm + ym*ym) / 5);
     text.style.textShadow = -xm + 'px ' + -ym + 'px ' + (d + 10) + 'px black';
 
